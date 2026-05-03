@@ -1,0 +1,36 @@
+{
+  "checkpoint": "models/best_model.pt",
+  "test_samples": 1500,
+  "accuracy": 0.9247,
+  "precision": 0.9251,
+  "recall": 0.9247,
+  "f1": 0.9246,
+  "auc": 0.9814,
+  "classification_report": {
+    "fake": {
+      "precision": 0.9393103448275862,
+      "recall": 0.908,
+      "f1-score": 0.9233898305084746,
+      "support": 750.0
+    },
+    "real": {
+      "precision": 0.9109677419354839,
+      "recall": 0.9413333333333334,
+      "f1-score": 0.9259016393442623,
+      "support": 750.0
+    },
+    "accuracy": 0.9246666666666666,
+    "macro avg": {
+      "precision": 0.9251390433815351,
+      "recall": 0.9246666666666667,
+      "f1-score": 0.9246457349263684,
+      "support": 1500.0
+    },
+    "weighted avg": {
+      "precision": 0.925139043381535,
+      "recall": 0.9246666666666666,
+      "f1-score": 0.9246457349263685,
+      "support": 1500.0
+    }
+  }
+}

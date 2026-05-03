@@ -1,0 +1,71 @@
+INSTRUCTIONS.txt — read this first
+===================================
+This file is what you read first. README.md is the comprehensive guide.
+
+Tested on: macOS (Apple Silicon and Intel) and Linux, Python 3.9 or higher.
+Windows is not officially supported.
+
+INSTALL
+-------
+python3 -m venv .venv
+source .venv/bin/activate
+.venv/bin/pip install -r requirements.txt
+
+QUICK SMOKE TEST
+----------------
+.venv/bin/python -m pytest tests/ -v
+Expected: 13 green ticks in roughly 17 seconds.
+(Skipped tests mean data/working or models/best_model.pt is not yet present — see REPRODUCE below.)
+
+RUN INFERENCE ON THE INCLUDED SAMPLE
+-------------------------------------
+.venv/bin/python scripts/run_inference.py \
+    --input data/sample/test_clip.mov \
+    --out   results/sample_prediction.json
+
+Output JSON is written to results/sample_prediction.json.
+Terminal prints a one-line verdict: label, P(fake), frames with faces.
+
+REPRODUCE THE EVALUATION FROM SCRATCH
+--------------------------------------
+1. Download the dataset from Kaggle:
+   https://www.kaggle.com/datasets/mafiosoquasar/deepfake-faces
+   Unzip to ~/Downloads/deepfake-faces/ (must contain real/ and fake/ sub-folders)
+
+2. .venv/bin/python scripts/prepare_data.py
+3. .venv/bin/python scripts/train.py --epochs 5
+4. .venv/bin/python scripts/evaluate.py
+
+HEADLINE NUMBERS
+----------------
+After evaluate.py finishes, open:
+  results/evaluation_metrics.json   (accuracy, F1, AUC, per-class breakdown)
+
+PLOTS
+-----
+  results/confusion_matrix.png
+  results/roc_curve.png
+
+SHOWCASE VIDEO
+--------------
+  Showcase_video_link.txt
+
+ETHICS
+------
+  EAN.txt              (MMU EthOS approval number)
+  DATASETS.md          (dataset citations and licences)
+
+TROUBLESHOOTING
+---------------
+Problem : "Adaptive pool / MPS" error during inference
+Fix     : MTCNN is already configured to run on CPU in inference.py.
+          If the error appears, confirm line ~141 reads:
+          device=torch.device("cpu")  inside the MTCNN(...) call.
+
+Problem : "Dataset root not found: data/working"
+Fix     : Run .venv/bin/python scripts/prepare_data.py first.
+          The working dataset is not included in the submission (too large).
+
+Problem : "Checkpoint not found: models/best_model.pt"
+Fix     : Run .venv/bin/python scripts/train.py --epochs 5 to generate the checkpoint.
+          Training takes approximately 7 minutes on Apple Silicon M4.
