@@ -1,0 +1,392 @@
+{
+  "schema_version": "1.0",
+  "input": "data/sample/test_clip.mov",
+  "model_checkpoint": "models/best_model.pt",
+  "model_config": "models/best_model_config.json",
+  "device": "mps",
+  "inference_seconds": 7.71,
+  "video_level": {
+    "label": "FAKE",
+    "probability_fake": 0.5099,
+    "probability_real": 0.4901
+  },
+  "frame_level": [
+    {
+      "frame_index": 0,
+      "face_detected": true,
+      "probability_fake": 0.9179,
+      "probability_real": 0.0821
+    },
+    {
+      "frame_index": 30,
+      "face_detected": true,
+      "probability_fake": 0.7273,
+      "probability_real": 0.2727
+    },
+    {
+      "frame_index": 60,
+      "face_detected": true,
+      "probability_fake": 0.4696,
+      "probability_real": 0.5304
+    },
+    {
+      "frame_index": 90,
+      "face_detected": true,
+      "probability_fake": 0.9065,
+      "probability_real": 0.0935
+    },
+    {
+      "frame_index": 120,
+      "face_detected": true,
+      "probability_fake": 0.8085,
+      "probability_real": 0.1915
+    },
+    {
+      "frame_index": 150,
+      "face_detected": true,
+      "probability_fake": 0.6547,
+      "probability_real": 0.3453
+    },
+    {
+      "frame_index": 180,
+      "face_detected": true,
+      "probability_fake": 0.6076,
+      "probability_real": 0.3924
+    },
+    {
+      "frame_index": 210,
+      "face_detected": true,
+      "probability_fake": 0.9015,
+      "probability_real": 0.0985
+    },
+    {
+      "frame_index": 240,
+      "face_detected": false,
+      "probability_fake": null,
+      "probability_real": null
+    },
+    {
+      "frame_index": 270,
+      "face_detected": false,
+      "probability_fake": null,
+      "probability_real": null
+    },
+    {
+      "frame_index": 300,
+      "face_detected": false,
+      "probability_fake": null,
+      "probability_real": null
+    },
+    {
+      "frame_index": 330,
+      "face_detected": false,
+      "probability_fake": null,
+      "probability_real": null
+    },
+    {
+      "frame_index": 360,
+      "face_detected": false,
+      "probability_fake": null,
+      "probability_real": null
+    },
+    {
+      "frame_index": 390,
+      "face_detected": true,
+      "probability_fake": 0.9505,
+      "probability_real": 0.0495
+    },
+    {
+      "frame_index": 420,
+      "face_detected": false,
+      "probability_fake": null,
+      "probability_real": null
+    },
+    {
+      "frame_index": 450,
+      "face_detected": false,
+      "probability_fake": null,
+      "probability_real": null
+    },
+    {
+      "frame_index": 480,
+      "face_detected": true,
+      "probability_fake": 0.0397,
+      "probability_real": 0.9603
+    },
+    {
+      "frame_index": 510,
+      "face_detected": true,
+      "probability_fake": 0.6254,
+      "probability_real": 0.3746
+    },
+    {
+      "frame_index": 540,
+      "face_detected": true,
+      "probability_fake": 0.7508,
+      "probability_real": 0.2492
+    },
+    {
+      "frame_index": 570,
+      "face_detected": true,
+      "probability_fake": 0.0547,
+      "probability_real": 0.9453
+    },
+    {
+      "frame_index": 600,
+      "face_detected": true,
+      "probability_fake": 0.8778,
+      "probability_real": 0.1222
+    },
+    {
+      "frame_index": 630,
+      "face_detected": false,
+      "probability_fake": null,
+      "probability_real": null
+    },
+    {
+      "frame_index": 660,
+      "face_detected": false,
+      "probability_fake": null,
+      "probability_real": null
+    },
+    {
+      "frame_index": 690,
+      "face_detected": false,
+      "probability_fake": null,
+      "probability_real": null
+    },
+    {
+      "frame_index": 720,
+      "face_detected": true,
+      "probability_fake": 0.0633,
+      "probability_real": 0.9367
+    },
+    {
+      "frame_index": 750,
+      "face_detected": true,
+      "probability_fake": 0.06,
+      "probability_real": 0.94
+    },
+    {
+      "frame_index": 780,
+      "face_detected": true,
+      "probability_fake": 0.0497,
+      "probability_real": 0.9503
+    },
+    {
+      "frame_index": 810,
+      "face_detected": true,
+      "probability_fake": 0.5499,
+      "probability_real": 0.4501
+    },
+    {
+      "frame_index": 840,
+      "face_detected": true,
+      "probability_fake": 0.8102,
+      "probability_real": 0.1898
+    },
+    {
+      "frame_index": 870,
+      "face_detected": true,
+      "probability_fake": 0.8188,
+      "probability_real": 0.1812
+    },
+    {
+      "frame_index": 900,
+      "face_detected": true,
+      "probability_fake": 0.0851,
+      "probability_real": 0.9149
+    },
+    {
+      "frame_index": 930,
+      "face_detected": true,
+      "probability_fake": 0.0321,
+      "probability_real": 0.9679
+    },
+    {
+      "frame_index": 960,
+      "face_detected": true,
+      "probability_fake": 0.02,
+      "probability_real": 0.98
+    },
+    {
+      "frame_index": 990,
+      "face_detected": true,
+      "probability_fake": 0.0183,
+      "probability_real": 0.9817
+    },
+    {
+      "frame_index": 1020,
+      "face_detected": true,
+      "probability_fake": 0.0255,
+      "probability_real": 0.9745
+    },
+    {
+      "frame_index": 1050,
+      "face_detected": true,
+      "probability_fake": 0.0431,
+      "probability_real": 0.9569
+    },
+    {
+      "frame_index": 1080,
+      "face_detected": true,
+      "probability_fake": 0.7842,
+      "probability_real": 0.2158
+    },
+    {
+      "frame_index": 1110,
+      "face_detected": true,
+      "probability_fake": 0.5587,
+      "probability_real": 0.4413
+    },
+    {
+      "frame_index": 1140,
+      "face_detected": true,
+      "probability_fake": 0.1912,
+      "probability_real": 0.8088
+    },
+    {
+      "frame_index": 1170,
+      "face_detected": false,
+      "probability_fake": null,
+      "probability_real": null
+    },
+    {
+      "frame_index": 1200,
+      "face_detected": false,
+      "probability_fake": null,
+      "probability_real": null
+    },
+    {
+      "frame_index": 1230,
+      "face_detected": true,
+      "probability_fake": 0.4013,
+      "probability_real": 0.5987
+    },
+    {
+      "frame_index": 1260,
+      "face_detected": true,
+      "probability_fake": 0.9692,
+      "probability_real": 0.0308
+    },
+    {
+      "frame_index": 1290,
+      "face_detected": true,
+      "probability_fake": 0.8843,
+      "probability_real": 0.1157
+    },
+    {
+      "frame_index": 1320,
+      "face_detected": true,
+      "probability_fake": 0.9421,
+      "probability_real": 0.0579
+    },
+    {
+      "frame_index": 1350,
+      "face_detected": true,
+      "probability_fake": 0.9565,
+      "probability_real": 0.0435
+    },
+    {
+      "frame_index": 1380,
+      "face_detected": true,
+      "probability_fake": 0.8782,
+      "probability_real": 0.1218
+    },
+    {
+      "frame_index": 1410,
+      "face_detected": false,
+      "probability_fake": null,
+      "probability_real": null
+    },
+    {
+      "frame_index": 1440,
+      "face_detected": false,
+      "probability_fake": null,
+      "probability_real": null
+    },
+    {
+      "frame_index": 1470,
+      "face_detected": true,
+      "probability_fake": 0.4805,
+      "probability_real": 0.5195
+    },
+    {
+      "frame_index": 1500,
+      "face_detected": true,
+      "probability_fake": 0.5185,
+      "probability_real": 0.4815
+    },
+    {
+      "frame_index": 1530,
+      "face_detected": true,
+      "probability_fake": 0.4646,
+      "probability_real": 0.5354
+    },
+    {
+      "frame_index": 1560,
+      "face_detected": true,
+      "probability_fake": 0.5836,
+      "probability_real": 0.4164
+    },
+    {
+      "frame_index": 1590,
+      "face_detected": true,
+      "probability_fake": 0.2882,
+      "probability_real": 0.7118
+    },
+    {
+      "frame_index": 1620,
+      "face_detected": true,
+      "probability_fake": 0.2676,
+      "probability_real": 0.7324
+    },
+    {
+      "frame_index": 1650,
+      "face_detected": true,
+      "probability_fake": 0.5249,
+      "probability_real": 0.4751
+    },
+    {
+      "frame_index": 1680,
+      "face_detected": true,
+      "probability_fake": 0.1861,
+      "probability_real": 0.8139
+    },
+    {
+      "frame_index": 1710,
+      "face_detected": true,
+      "probability_fake": 0.3132,
+      "probability_real": 0.6868
+    },
+    {
+      "frame_index": 1740,
+      "face_detected": true,
+      "probability_fake": 0.4277,
+      "probability_real": 0.5723
+    },
+    {
+      "frame_index": 1770,
+      "face_detected": true,
+      "probability_fake": 0.7978,
+      "probability_real": 0.2022
+    },
+    {
+      "frame_index": 1800,
+      "face_detected": true,
+      "probability_fake": 0.5605,
+      "probability_real": 0.4395
+    },
+    {
+      "frame_index": 1830,
+      "face_detected": true,
+      "probability_fake": 0.6264,
+      "probability_real": 0.3736
+    }
+  ],
+  "summary": {
+    "frames_sampled": 62,
+    "frames_with_faces": 48,
+    "frames_without_faces": 14
+  }
+}

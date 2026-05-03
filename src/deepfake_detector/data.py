@@ -17,7 +17,7 @@ Usage:
     loaders = get_dataloaders("data/working", batch_size=32, num_workers=4)
     loaders["train"], loaders["val"], loaders["test"]
 """
-
+from __future__ import annotations
 from pathlib import Path
 
 from torch.utils.data import DataLoader

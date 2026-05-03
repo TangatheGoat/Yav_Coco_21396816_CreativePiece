@@ -1,0 +1,11 @@
+{
+  "architecture": "resnet18",
+  "num_classes": 2,
+  "image_size": 224,
+  "imagenet_normalised": true,
+  "class_to_idx": {
+    "fake": 0,
+    "real": 1
+  },
+  "best_val_acc": 0.916667
+}

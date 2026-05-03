@@ -1,0 +1,3 @@
+[TEST] Loading best checkpoint for held-out test evaluation …
+  Test loss : 0.2069
+  Test acc  : 0.9247
