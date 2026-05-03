@@ -1,1 +1,15 @@
-YOUR_EAN_HERE
+cd ~/Desktop/Synoptic\ Project/Yav_Coco_21396816_CreativePiece
+cat > EAN.txt << 'EOF'
+MMU Ethics Sign-off
+-------------------
+Project    : Detection of Deepfake Videos in Generative AI and LLMs
+Student    : Coco Yav (ID 21396816)
+Supervisor : Dr Nicholas Costen
+Date       : 01/05/2026
+
+This project was conducted under the ethical sign-off of the named
+supervisor in accordance with MMU's Faculty research ethics
+procedures. The supervisor's authorisation is recorded above in lieu
+of a separately issued EthOS reference number.
+EOF
+cat EAN.txt
